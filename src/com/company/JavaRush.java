@@ -9,21 +9,23 @@ import java.util.Scanner;
 public class JavaRush {
     public static void main (String [] args) {
 
-        String a,b,c;
-        int a1, b2, c3;
+        float a;
+        boolean isHigh = false, isLow = false;
+
         Scanner console = new Scanner(System.in);
-        a = console.nextLine();
-        b = console.nextLine();
-        c = console.nextLine();
 
-        a1 = console.nextInt();
-        b2 = console.nextInt();
-        c3= console.nextInt();
+        System.out.println("Введите возраст");
+        a = console.nextFloat();
 
-        System.out.println(a.toLowerCase());
-        System.out.println(b.toUpperCase());
-        System.out.println(c);
-        System.out.println((a1 + b2 + c3) / 3);
-
+        if (a > 36.6f) {
+            isHigh = true;
+            System.out.println(isHigh);
+        }
+        else if (a < 36.6f) {
+            isLow = true;
+            System.out.println(isLow);
+        }
+        else
+            System.out.println("Нормальная температура");
     }
 }
