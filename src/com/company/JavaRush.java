@@ -9,23 +9,30 @@ import java.util.Scanner;
 public class JavaRush {
     public static void main (String [] args) {
 
-        float a;
+        int a, b, c;
         boolean isHigh = false, isLow = false;
 
         Scanner console = new Scanner(System.in);
 
-        System.out.println("Введите возраст");
-        a = console.nextFloat();
+        System.out.println("Введите 1 число");
+        a = console.nextInt();
 
-        if (a > 36.6f) {
-            isHigh = true;
-            System.out.println(isHigh);
+        System.out.println("Введите 2число");
+        b = console.nextInt();
+
+        System.out.println("Введите 3число");
+        c = console.nextInt();
+
+        if (a == b) {
+            if (a == c)
+            System.out.println(a + " " + b + " " + c);
+            else System.out.println(a + " "  + b);
         }
-        else if (a < 36.6f) {
-            isLow = true;
-            System.out.println(isLow);
-        }
+        else if (b == c)
+            System.out.println(b + " " + c);
+        else if (a == c)
+            System.out.println(a + " " + c);
         else
-            System.out.println("Нормальная температура");
+            System.out.println("Нет равных чисел");
     }
 }
