@@ -9,17 +9,24 @@ import java.util.Scanner;
 public class JavaRush {
     public static void main (String [] args) {
 
-        // Можно не работать
+        // Координатная четверть точки
 
         Scanner console = new Scanner(System.in);
-        int a;
+        int x, y;
 
-        System.out.println("Введите свой возраст");
-        a = console.nextInt();
+        System.out.println("Введите x");
+        x = console.nextInt();
 
-        if ((a < 20) || (a > 60))
-            System.out.println("Можно не работать");
+        System.out.println("Введите y");
+        y = console.nextInt();
+
+        if ((x < 0) && (y > 0))
+            System.out.println("Первая четверть");
+        else if ((x > 0) && (y > 0))
+            System.out.println("Вторая четверть");
+        else if ((x < 0) && (y < 0))
+            System.out.println("Третья четверть");
         else
-            System.out.println("Опять работа ? 0-0");
+            System.out.println("Четвертая четверть");
     }
 }
