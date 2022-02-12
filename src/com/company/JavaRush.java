@@ -9,23 +9,17 @@ import java.util.Scanner;
 public class JavaRush {
     public static void main (String [] args) {
 
-        // Треугольник
+        // Можно не работать
 
         Scanner console = new Scanner(System.in);
-        int a, b, c;
+        int a;
 
-        System.out.println("Введите первую сторону треугольника");
+        System.out.println("Введите свой возраст");
         a = console.nextInt();
 
-        System.out.println("Введите вторую сторону треугольника");
-        b = console.nextInt();
-
-        System.out.println("Введите третью сторону треугольника");
-        c = console.nextInt();
-
-        if ((a + b > c) && (a + c > b) && (b + c > a))
-            System.out.println("Можно составить треугольник");
+        if ((a < 20) || (a > 60))
+            System.out.println("Можно не работать");
         else
-            System.out.println("Нельзя составить треугольник");
+            System.out.println("Опять работа ? 0-0");
     }
 }
