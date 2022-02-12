@@ -7,22 +7,26 @@ import java.util.Scanner;
 КЛАСС ДЛЯ РАБОТЫ С КУРСОМ JAVARUSH
  */
 public class JavaRush {
-    public static void main (String [] args) {
+    public static void main(String[] args) {
 
         // Большее число
 
         Scanner console = new Scanner(System.in);
-        int x, y, z;
+        double x, y;
+        boolean z;
 
         System.out.println("Введите 1 число");
-        x = console.nextInt();
+        x = console.nextDouble();
 
         System.out.println("Введите 2 число");
-        y = console.nextInt();
+        y = console.nextDouble();
 
-        z = x > y ? x : y;
+        z = Math.abs(y - x) < 0.0000001;
 
-        System.out.println("Большее число");
-        System.out.println(z);
+        if (z)
+            System.out.println("Числа равны  с точностью до одной миллионной.");
+        else
+            System.out.println("Числа не равны");
+
     }
 }
