@@ -9,24 +9,20 @@ import java.util.Scanner;
 public class JavaRush {
     public static void main (String [] args) {
 
-        // Координатная четверть точки
+        // Большее число
 
         Scanner console = new Scanner(System.in);
-        int x, y;
+        int x, y, z;
 
-        System.out.println("Введите x");
+        System.out.println("Введите 1 число");
         x = console.nextInt();
 
-        System.out.println("Введите y");
+        System.out.println("Введите 2 число");
         y = console.nextInt();
 
-        if ((x < 0) && (y > 0))
-            System.out.println("Первая четверть");
-        else if ((x > 0) && (y > 0))
-            System.out.println("Вторая четверть");
-        else if ((x < 0) && (y < 0))
-            System.out.println("Третья четверть");
-        else
-            System.out.println("Четвертая четверть");
+        z = x > y ? x : y;
+
+        System.out.println("Большее число");
+        System.out.println(z);
     }
 }
