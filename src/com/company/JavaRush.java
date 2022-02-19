@@ -3,32 +3,16 @@ package com.company;
 import java.util.Scanner;
 
 /*
-    JavaRush 4 уровень,  6 лекция Сумма кратных чисел
+    JavaRush 4 уровень,  7 лекция Рисуем треугольник
  */
 public class JavaRush {
 
     public static void main(String[] args) {
-        Scanner console = new Scanner(System.in);
-        int start, end, multiple;
-        int count = 0;
 
-        System.out.println("Введите начальное число");
-        start = console.nextInt();
-        System.out.println("Введите последнее число");
-        end = console.nextInt();
-        System.out.println("Введите кратное число");
-        multiple = console.nextInt();
-
-
-        for (;start < end;) {
-            if (start % multiple == 0) {
-                System.out.println(start);
-                count += start;
-            }
-
-            start++;
-            continue;
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= i; j++)
+                System.out.print(8);
+            System.out.println();
         }
-        System.out.println(count);
     }
 }
