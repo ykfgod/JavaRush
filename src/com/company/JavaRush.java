@@ -3,21 +3,21 @@ package com.company;
 import java.util.Scanner;
 
 /*
-    JavaRush 4.3 Все любят Мамбу
+    JavaRush 4.3 Суммирование
  */
 public class JavaRush {
 
     public static void main(String[] args) {
 
         Scanner console = new Scanner(System.in);
-        int n = 0;
-        String name;
+        int count;
 
-        name = console.nextLine();
+        count = console.nextInt();
 
-        while (n < 10) {
-            System.out.println(name + " любит меня");
-            n++;
+        while (console.hasNextInt()) {
+            count += console.nextInt();
         }
+
+        System.out.println(count);
     }
 }
