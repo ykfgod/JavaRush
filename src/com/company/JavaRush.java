@@ -1,30 +1,23 @@
 package com.company;
 
+import java.util.Scanner;
+
 /*
-    JavaRush 3.9 Сравнение строк по ссылке
+    JavaRush 3.9 Сломанная клавиатура
  */
 public class JavaRush {
-    private static String string1 = "Амиго";
-    private static String string2 = string1;
-    private static String string3 = new String(string1);
 
     public static void main(String[] args) {
-        //напишите тут ваш код
-        //  System.out.println("ссылки на строки одинаковые");
-        //напишите тут ваш код
-        //  System.out.println("ссылки на строки разные");
 
-        if(string1 == string2){
-            System.out.println("ссылки на строки одинаковые");}
-        else
-            System.out.println("ссылки на строки разные");
-        if(string2 == string3){
-            System.out.println("ссылки на строки одинаковые");}
-        else
-            System.out.println("ссылки на строки разные");
-        if(string1 == string3){
-            System.out.println("ссылки на строки одинаковые");}
-        else
-            System.out.println("ссылки на строки разные");
+        Scanner console = new Scanner(System.in);
+        String a;
+        String secret = "AmIGo";
+
+        System.out.println("Введите пароль");
+        a = console.nextLine();
+
+        if (a.equalsIgnoreCase(secret))
+            System.out.println("Доступ разрешен");
+        else System.out.println("Доступ запрещен");
     }
 }
