@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 /*
-    JavaRush 4 уровень,  5 лекция Максимум из введенных чисел
+    JavaRush 4 уровень,  5 лекция Второе минимальное число из введенных
  */
 public class JavaRush {
 
@@ -11,14 +11,23 @@ public class JavaRush {
         Scanner console = new Scanner(System.in);
 
         int i = 0;
-        int min = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        int min2 = Integer.MAX_VALUE;
 
         while (console.hasNextInt()) {
             i = console.nextInt();
-            if (i > min)
+
+            if (i < min) {
+                min2 = min;
                 min = i;
+            }
+
+            if ((i < min2) && (min != i))
+                min2 = i;
         }
 
         System.out.println(min);
+        System.out.println(min2);
+
     }
 }
