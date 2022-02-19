@@ -3,21 +3,24 @@ package com.company;
 import java.util.Scanner;
 
 /*
-    JavaRush 4.3 Суммирование
+    JavaRush 4.3 Заполненный прямоугольник
  */
 public class JavaRush {
 
     public static void main(String[] args) {
+        int n = 0;
 
-        Scanner console = new Scanner(System.in);
-        int count;
+        while (n < 5) {
 
-        count = console.nextInt();
+            int m = 0 ;
 
-        while (console.hasNextInt()) {
-            count += console.nextInt();
+            while (m < 10){
+                System.out.print('Q');
+                m++;
+            }
+
+            n++;
+            System.out.println();
         }
-
-        System.out.println(count);
     }
 }
