@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 /*
-    JavaRush 4 уровень,  5 лекция Минимум из введенных чисел
+    JavaRush 4 уровень,  5 лекция Максимум из введенных чисел
  */
 public class JavaRush {
 
@@ -11,11 +11,11 @@ public class JavaRush {
         Scanner console = new Scanner(System.in);
 
         int i = 0;
-        int min = Integer.MAX_VALUE;
+        int min = Integer.MIN_VALUE;
 
         while (console.hasNextInt()) {
             i = console.nextInt();
-            if (i < min)
+            if (i > min)
                 min = i;
         }
 
