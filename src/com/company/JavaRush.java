@@ -3,20 +3,21 @@ package com.company;
 import java.util.Scanner;
 
 /*
-    JavaRush 4.3 Я никогда не буду работать за копейки
+    JavaRush 4.3 Все любят Мамбу
  */
 public class JavaRush {
 
     public static void main(String[] args) {
 
+        Scanner console = new Scanner(System.in);
         int n = 0;
-        int count = 0;
-        while (n < 100) {
-            System.out.println("Я никогда не буду работать за копейки. Амиго");
-            n++;
-            count++;
-        }
+        String name;
 
-        System.out.println(count);
+        name = console.nextLine();
+
+        while (n < 10) {
+            System.out.println(name + " любит меня");
+            n++;
+        }
     }
 }
