@@ -3,23 +3,22 @@ package com.company;
 import java.util.Scanner;
 
 /*
-    JavaRush 4 уровень,  4 лекция Сумма чисел, не кратных 3
+    JavaRush 4 уровень,  5 лекция Минимум из введенных чисел
  */
 public class JavaRush {
 
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
-        int i = 0;
-        int sum = 0;
 
-        while (i < 100) {
-            i++;
-            if ((i % 3) == 0)
-             continue;
-            System.out.println(i);
-            sum += i;
+        int i = 0;
+        int min = Integer.MAX_VALUE;
+
+        while (console.hasNextInt()) {
+            i = console.nextInt();
+            if (i < min)
+                min = i;
         }
 
-        System.out.println(sum);
+        System.out.println(min);
     }
 }
