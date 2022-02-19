@@ -3,21 +3,20 @@ package com.company;
 import java.util.Scanner;
 
 /*
-    JavaRush 3.9 Сломанная клавиатура
+    JavaRush 4.3 Я никогда не буду работать за копейки
  */
 public class JavaRush {
 
     public static void main(String[] args) {
 
-        Scanner console = new Scanner(System.in);
-        String a;
-        String secret = "AmIGo";
+        int n = 0;
+        int count = 0;
+        while (n < 100) {
+            System.out.println("Я никогда не буду работать за копейки. Амиго");
+            n++;
+            count++;
+        }
 
-        System.out.println("Введите пароль");
-        a = console.nextLine();
-
-        if (a.equalsIgnoreCase(secret))
-            System.out.println("Доступ разрешен");
-        else System.out.println("Доступ запрещен");
+        System.out.println(count);
     }
 }
