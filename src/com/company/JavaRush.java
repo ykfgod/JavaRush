@@ -10,8 +10,8 @@ public class JavaRush {
     public static void main(String[] args) {
 
         Scanner console = new Scanner(System.in);
-        int radius = console.nextInt();
+        int a = console.nextInt(), b = console.nextInt();
 
-        System.out.println((int)(3.14*radius*radius));
+        System.out.println(1.0*a/b);
     }
 }
