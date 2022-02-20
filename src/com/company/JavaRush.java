@@ -3,16 +3,24 @@ package com.company;
 import java.util.Scanner;
 
 /*
-    JavaRush 4 уровень,  7 лекция Рисуем треугольник
+    JavaRush 4 уровень,  8 лекция Хорошего не бывает много
  */
 public class JavaRush {
 
     public static void main(String[] args) {
 
-        for (int i = 1; i <= 10; i++) {
-            for (int j = 1; j <= i; j++)
-                System.out.print(8);
-            System.out.println();
+        Scanner console = new Scanner(System.in);
+        String s;
+        int number;
+
+        s = console.nextLine();
+        number = console.nextInt();
+
+        do {
+            System.out.println(s);
+            number--;
         }
+        while ((number > 0) && (number < 4));
+
     }
 }
