@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 /*
-    JavaRush  6 уровень, 3 лекция Revers
+    JavaRush  6 уровень, 3 лекция Минимальное из N чисел
  */
 public class JavaRush {
 
@@ -22,13 +22,14 @@ public class JavaRush {
             array[i] = console.nextInt();
         }
 
-        if (N % 2 == 0) {
-            for (int i = array.length-1; i >= 0; i--)
-                System.out.println(array[i]);
-        } else
-            for (int i = 0; i < array.length; i++) {
-                System.out.println(array[i]);
-            }
+        N = Integer.MAX_VALUE;
+
+        for (int i = 0; i < array.length; i++)
+            if (array[i] < N)
+                N = array [i];
+
+        System.out.println(N);
+
     }
 
 }
