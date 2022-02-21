@@ -3,37 +3,24 @@ package com.company;
 import java.util.Scanner;
 
 /*
-    JavaRush  6 уровень, 4 лекция Удаляем одинаковые строки
+    JavaRush  6 уровень, 5 лекция Таблица умножения
  */
 public class JavaRush {
 
+    public static int[][] MULTIPLICATION_TABLE;
+
     public static void main(String[] args) {
 
-        Scanner console = new Scanner(System.in);
-        String [] array = new String[6];
+       MULTIPLICATION_TABLE = new int[10][10];
 
-        System.out.println("Введите " + 6 + " строк");
-        for (int i = 0; i < array.length; i++) {
-            array[i] = console.nextLine();
-        }
+        for (int i = 1; i < 10; i++) {
+            for (int j = 1; j < 10; j++) {
 
-        for (int i = 0; i < array.length; i++) {
+                MULTIPLICATION_TABLE[i][j] = i*j;
+                System.out.print(MULTIPLICATION_TABLE[i][j]+ " ");
 
-            if (array[i] == null) continue;
-
-            for (int j = i+1; j < array.length ; j++) {
-
-                if (array[i].equals(array[j]))
-                {
-                    array[i] = null;
-                    array[j] = null;
-                    break;
-                }
             }
-        }
-
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
+            System.out.println();
         }
 
     }
