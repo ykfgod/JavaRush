@@ -1,4 +1,4 @@
-package com.company;
+package Гоша;
 //15 Урок Гоша Дударь Наследование главный класс Main
 public class Student extends Person{
     int course = 1;

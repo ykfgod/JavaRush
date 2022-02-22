@@ -1,4 +1,4 @@
-package com.company;
+package Гоша;
 import java.util.Scanner;
 
 public class Cycles {

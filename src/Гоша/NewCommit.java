@@ -1,4 +1,4 @@
-package com.company;
+package Гоша;
 
 public class NewCommit {
     public static void main (String[] args) {

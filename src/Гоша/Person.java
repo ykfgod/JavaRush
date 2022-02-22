@@ -1,4 +1,4 @@
-package com.company;
+package Гоша;
 // 13 Урок Гоша Дударь Сохдание классов и объекта
 // Этот клас открывается в классе 2 урока Main
 public class Person {

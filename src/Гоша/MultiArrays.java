@@ -1,4 +1,4 @@
-package com.company;
+package Гоша;
 // 10 Урок Гоша Дударь Многоменрные массивы
 public class MultiArrays {
     public static void main(String[] args) {

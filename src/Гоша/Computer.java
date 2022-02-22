@@ -1,4 +1,4 @@
-package com.company;
+package Гоша;
 // 17 Урок вложенные и анонимные классы
 public class Computer {
     class  Proccessor {

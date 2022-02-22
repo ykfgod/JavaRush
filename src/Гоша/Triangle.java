@@ -1,4 +1,4 @@
-package com.company;
+package Гоша;
 
 public class Triangle extends Shape {
     public void draw () {

@@ -1,4 +1,4 @@
-package com.company;
+package Гоша;
 import java.lang.String;
 public class Main{
 

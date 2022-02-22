@@ -1,4 +1,4 @@
-package com.company;
+package Гоша;
 import java.util.Scanner;
 // 11 Урок Гоша Дударь Функции
 

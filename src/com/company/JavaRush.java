@@ -3,22 +3,24 @@ package com.company;
 import java.util.Scanner;
 
 /*
-    JavaRush  6 уровень, 5 лекция Таблица умножения
+    JavaRush  6 уровень, 6 лекция Треугольный массив
  */
 public class JavaRush {
 
-    public static int[][] MULTIPLICATION_TABLE;
+    public static int[][] result = new int[10][];
 
     public static void main(String[] args) {
 
-       MULTIPLICATION_TABLE = new int[10][10];
+        for (int i = 0; i < 10; i++) {
 
-        for (int i = 1; i < 10; i++) {
-            for (int j = 1; j < 10; j++) {
+            result[i] = new int [i+1];
 
-                MULTIPLICATION_TABLE[i][j] = i*j;
-                System.out.print(MULTIPLICATION_TABLE[i][j]+ " ");
+        }
 
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                result[i][j] = i+j;
+                System.out.print(result[i][j]);
             }
             System.out.println();
         }

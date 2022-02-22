@@ -1,4 +1,4 @@
-package com.company;
+package Гоша;
 import java.util.Scanner;
 
 // 9 Урок по Массивам Гоша Дударь
