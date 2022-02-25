@@ -26,5 +26,7 @@ public class ArrayListEx1 {
         System.out.println(list1);
         System.out.println(list4);
         System.out.println(list4 == list1);
+        System.out.println(list4 == list1);
+
     }
 }
